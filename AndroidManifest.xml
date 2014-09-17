@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="pinetree.cra.bis"
+	android:versionCode="1"
+	android:versionName="1.0.9" >
+
+	<uses-sdk android:targetSdkVersion="15" android:minSdkVersion="10" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <application
+        android:icon="@drawable/android_appicon"
+        android:theme="@style/MyCustomTheme"
+        android:label="@string/app_title">
+
+		<uses-library android:name="com.google.android.maps" android:required="true"></uses-library>
+        
+        <activity android:name="Cra_bisSplashActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="Cra_bisUIActivity">
+        </activity>
+        
+        <activity android:name="Cra_bisLoginActivity" />
+        <!--
+            android:theme="@android:style/Theme.Light.NoTitleBar" /> 
+         -->
+        
+        <activity
+            android:name=".Cra_bisGPSActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        
+        <activity android:name=".Cra_bisDestinationActivity">
+        </activity>
+        
+        <activity android:name=".Cra_bisTimeListActivity">
+		</activity>
+
+        <activity android:name=".Cra_bisSettingActivity">
+		</activity>
+        
+        
+    </application>
+</manifest>

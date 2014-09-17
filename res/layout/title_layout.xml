@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TitleLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/darker_gray" />
+
+    <ProgressBar
+        android:id="@+id/progressTitleBar"
+        style="@android:attr/progressBarStyleSmallTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dip"
+        android:layout_toLeftOf="@+id/layout_menu"
+        android:maxHeight="28dip"
+        android:maxWidth="28dip"
+        android:minHeight="25dip"
+        android:minWidth="25dip"
+        android:visibility="invisible" />
+    
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="0.8dip"
+            android:layout_height="40dip"
+            android:background="@color/menuLine"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:background="@drawable/button_setting"
+            android:gravity="center"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="18dip" />
+
+    </LinearLayout>
+
+</RelativeLayout>

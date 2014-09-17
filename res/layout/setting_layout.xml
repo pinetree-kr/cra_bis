@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnStart"
+            android:gravity="center_vertical"
+            android:padding="5dip"
+            android:text="@string/setting_server"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnDest2"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/textTitleBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"/>
+        </LinearLayout><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="4dip"
+            android:text="@string/setting_serverAddr"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/inputServerAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dip"
+                android:paddingLeft="14dip"
+                android:paddingTop="4dip"
+                android:text="http://cra16.handong.edu/i7/index.php"
+                android:textSize="13dip" >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonConnect"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/inputServerAddr"
+                android:maxHeight="40dip"
+                android:maxWidth="56dip"
+                android:minHeight="40dip"
+                android:minWidth="56dip"
+                android:text="연결"
+                android:textSize="11dip" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnStart"
+            android:gravity="center_vertical"
+            android:padding="5dip"
+            android:text="@string/setting_login"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnDest2"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="4dip"
+            android:text="@string/setting_loginInfo"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip" >
+
+            <TextView
+                android:id="@+id/textLoginId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dip"
+                android:paddingLeft="14dip"
+                android:paddingRight="25dip"
+                android:paddingTop="4dip"
+                android:text="@string/setting_loginIdNull"
+                android:textSize="13dip" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/textLoginId"
+                android:maxHeight="40dip"
+                android:minHeight="40dip"
+                android:text="@string/setting_logon"
+                android:textSize="11dip" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnStart"
+            android:gravity="center_vertical"
+            android:padding="5dip"
+            android:text="@string/setting_info"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnDest2"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/View02"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="4dip"
+            android:text="@string/setting_programInfo"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textProgramVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dip"
+                android:paddingLeft="14dip"
+                android:paddingRight="25dip"
+                android:paddingTop="4dip"
+                android:text="@string/setting_programVer"
+                android:textSize="13dip" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/columnDest"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/View03"
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="4dip"
+            android:text="@string/setting_maker"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textMakerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dip"
+                android:paddingLeft="14dip"
+                android:paddingRight="25dip"
+                android:paddingTop="4dip"
+                android:text="@string/setting_makerName"
+                android:textSize="13dip" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

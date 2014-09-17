@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapAll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="702" >
+
+    <FrameLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="390" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:apiKey="01NjxLvUPd0uoeEN75JI7GAF4sqALIYISKpaWCw"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_alignParentBottom="true"
+                android:background="#c032cd32"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textBusInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textColor="#000000"
+                    android:textSize="26px" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="180"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:height="60dp"
+            android:textOff="켜기"
+            android:textOn="끄기"
+            android:textSize="25dp"
+            android:width="100dp" />
+
+        <RadioGroup
+            android:id="@+id/radioVolumeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioEmptyBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="빈차"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioHalfBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="반차"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFullBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="만차"
+                android:textSize="20dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="132"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

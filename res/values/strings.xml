@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Cra_busActivity!</string>
+    <string name="description">버튼을 누르시면 위치정보를 송신합니다</string>
+    <string name="app_title">버스간다inI7</string>
+    <string name="quit">종료 메시지</string>
+    <string name="really_quit">정말 종료하시겠습니까?</string>
+    <string name="empty_loginForm">아이디 혹은 비밀번호가 비어있습니다</string>
+    <string name="id">ID</string>
+    <string name="pw">PW</string>
+    <string name="testId">testdriver</string>
+    <string name="testPw">testcra</string>
+    <string name="testId2">testdriver2</string>
+    <string name="testPw2">testcra2</string>
+    <string name="button_gps_on">켜기</string>
+    <string name="button_gps_off">끄기</string>
+    <string name="button_yes">네</string>
+    <string name="button_no">아니오</string>
+    <string name="gps_on">GPS를 켭니다</string>
+    <string name="gps_off">GPS를 끕니다</string>
+    <string name="login">로그인</string>
+    <string name="yes">네</string>
+    <string name="no">아니오</string>
+    <string name="titleSetting">환경 설정</string>
+    <string name="titleLogin">로그인</string>
+    <string name="titleDestination">목적지 선택</string>
+    <string name="titleTimeList">시간표 선택</string>
+    <string name="titleGPS">위치 정보 상태</string>
+    <string name="code_error">네트워크 오류</string>
+    <string name="network_error">네트워크 연결이 실패했습니다\n네트워크 상태를 확인후 다시 시도해주세요</string>
+    <string name="empty_list">리스트가 비어있습니다</string>
+    <string name="auto_fill">ID 저장</string>
+    <string name="auto_login">자동 로그인</string>
+    <string name="setting">설정</string>
+    <string name="setting_logon">로그인</string>
+    <string name="setting_logoff">로그아웃</string>
+	<string name="setting_server">서버</string>
+	<string name="setting_serverAddr">서버주소</string>
+	<string name="setting_login">로그인</string>
+	<string name="setting_loginInfo">로그인 정보</string>
+	<string name="setting_loginIdNull">로그인이 필요합니다</string>
+	<string name="setting_info">정보</string>
+	<string name="setting_programInfo">프로그램 정보</string>
+	<string name="setting_programVer">버스간다</string>
+	<string name="setting_maker">만든 이</string>
+	<string name="setting_makerName">한동대학교 전산연구회 CRA(송지호)</string>
+	<string name="needGpsOn">GPS가 꺼져있습니다\nGPS설정화면으로 이동하시겠습니까?</string>
+</resources>
